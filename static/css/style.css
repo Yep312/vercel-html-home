@@ -24,6 +24,7 @@
   box-sizing: border-box;
   user-select: none;
   transition: background-color 0.2s ease;
+  cursor: url(../svg/cursor.svg) 4 4, auto !important;
 }
 
 a:hover,
@@ -815,4 +816,21 @@ footer {
   font-size: 13px;
   border-radius: 10px;
   background: var(--left_tag_item);
+}
+
+.cursor-dot {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+  left: 0;
+  top: 0;
+}
+
+.cursor-dot.active {
+  transform: scale(0.5);
 }
