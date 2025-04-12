@@ -265,6 +265,9 @@
 	<script>
 		const cursorDot = document.querySelector('.cursor-dot');
 
+		cursorDot.style.left = `-20px`;
+		cursorDot.style.top = `-20px`;
+
 		document.addEventListener('mousemove', (e) => {
 			// 直接使用鼠标位置，减去小圆点半径
 			cursorDot.style.left = `${e.clientX - 10 + 1}px`;
